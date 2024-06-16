@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm_agents_introduction"
+version = "0.1.0"
+description = "Introduction to LLM Agents"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "David Padbury", email = "david@davidpadbury.com"}]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = ["-ra", "-q"]
+testpaths = ["tests"]
+
+[tool.ruff]
+extend-include = ["*.ipynb"]
